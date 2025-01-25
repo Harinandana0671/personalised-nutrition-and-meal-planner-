@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalized Nutrition and Meal Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personalized Nutrition and Meal Planner</h1>
+        <form id="mealPlannerForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required>
+            </div>
+            <div class="form-group">
+                <label for="height">Height (meters):</label>
+                <input type="number" id="height" name="height" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="healthGoal">Health Goal:</label>
+                <select id="healthGoal" name="healthGoal">
+                    <option value="Weight Loss">Weight Loss</option>
+                    <option value="Muscle Gain">Muscle Gain</option>
+                    <option value="Maintenance">Maintenance</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dietaryPreference">Dietary Preference:</label>
+                <select id="dietaryPreference" name="dietaryPreference">
+                    <option value="Vegetarian">Vegetarian</option>
+                    <option value="Vegan">Vegan</option>
+                    <option value="Non-Vegetarian">Non-Vegetarian</option>
+                </select>
+            </div>
+            <button type="submit">Generate Meal Plan</button>
+        </form>
+        <div id="result" class="result hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
